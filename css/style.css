@@ -1,0 +1,92 @@
+body, html {
+	height:100%;
+	margin:0;
+	padding:0;
+	/*background:#222;*/
+	font-size: 16px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: 400;
+	line-height: 1.8em;
+}
+.fadein2 {
+	opacity:0;
+	animation: fadein2 1s ease-in 1s forwards;
+    -moz-animation: fadein 1s ease-in 1s forwards; /* Firefox */
+    -webkit-animation: fadein 1s ease-in 1s forwards; /* Safari and Chrome */
+    -o-animation: fadein 1s ease-in 1s forwards; /* Opera */
+}
+.fadein5 {
+	opacity:0;
+	animation: fadein 3s 2s forwards;
+    -moz-animation: fadein 3s 2s forwards; /* Firefox */
+    -webkit-animation:fadein 3s 2s forwards; /* Safari and Chrome */
+    -o-animation:fadein 3s 2s forwards; /* Opera */
+}
+.card {
+	min-width:300px;
+	margin: 1rem;
+	flex: 1 1 calc(33% - 2rem);
+}
+.container {
+	display:flex;
+	overflow-x:hidden;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin:auto;
+	max-width:1300px;
+}
+h1 {
+	text-align:center;
+	background-color: #c0c4e0;
+	border-radius: 20px 20px 0 0;
+	font-family:Arial;
+	padding:13px;
+	margin:0;
+	height:50px;
+}
+.movie-description {
+	background-color:#eaecfc;
+	margin:0;
+	padding:20px;
+	height:300px;
+	border-radius: 0 0 20px 20px;
+	font-family:'Dosis', sans-serif;
+}
+.people {
+	font-weight:bold;
+	text-align:center;
+	font-style:italic;
+	color:#01296F;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
